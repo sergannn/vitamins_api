@@ -2,5 +2,5 @@
 nose
 requests
 fastapi
-"uvicorn[standard]"
+uvicorn[standard]
 ###### Requirements with Version Specifiers ######
