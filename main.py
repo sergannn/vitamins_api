@@ -1,5 +1,13 @@
 import requests
 from requests.structures import CaseInsensitiveDict
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
 
 url = "https://store.tildacdn.com/api/getproductslist/?storepartuid=328080061611&recid=616600488&c=1695901425189&getparts=true&getoptions=true&slice=1&size=36"
 
